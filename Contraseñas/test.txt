@@ -1,0 +1,20 @@
+    pas1 = Password('aa', 'ad')
+    pas2 = Password('aa', 'ad')
+    pas3 = Password('bb', 'ba')
+    
+    listado = Listado()
+    print(pas1)
+    print(pas2)
+    print()
+    
+    listado += pas1
+    listado += pas3
+    print()
+    
+    print(listado.__str__())
+    
+    listado -= Password('cc', 'ca')
+    listado -= pas3
+    print()
+    
+    print(listado.__str__())
